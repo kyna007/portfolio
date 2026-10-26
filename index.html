@@ -251,7 +251,11 @@ section{padding:72px 0 0;scroll-margin-top:72px}
   .kpi .v{font-size:28px}
 }
 @media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+.print-only{display:none!important}
+.weblink{display:flex;align-items:center;gap:8px;margin-top:20px;font-size:15px;font-weight:600;color:var(--sub)}
+.weblink a{color:var(--acc);text-decoration:none}
 @page{size:1280px 1810px;margin:0}
+@media print{p.print-only{display:flex!important}.ct a.print-only{display:flex!important}}
 @media print{
   html,body{-webkit-print-color-adjust:exact;print-color-adjust:exact}
   body{padding:56px 0 0}
@@ -353,6 +357,7 @@ section{padding:72px 0 0;scroll-margin-top:72px}
         <a class="btn pri" href="#work">프로젝트 보기 <svg width="18" height="18"><use href="#i-arrow"/></svg></a>
         <a class="btn sec" href="#contact">연락하기 <svg width="17" height="17"><use href="#i-mail"/></svg></a>
       </div>
+      <p class="weblink print-only"><svg width="16" height="16"><use href="#i-ext"/></svg>웹 버전 <a href="https://kyna007.github.io/portfolio/">kyna007.github.io/portfolio</a></p>
     </div>
     <div class="hero-art">
       <svg viewBox="0 0 540 430" role="img" aria-label="노트북과 데이터 차트가 있는 작업 공간 일러스트">
@@ -646,6 +651,7 @@ section{padding:72px 0 0;scroll-margin-top:72px}
     <div class="ct">
       <a href="tel:01056629924"><span class="ic"><svg width="16" height="16"><use href="#i-phone"/></svg></span>010-5662-9924</a>
       <a href="mailto:kyna02@naver.com"><span class="ic"><svg width="16" height="16"><use href="#i-mail"/></svg></span>kyna02@naver.com</a>
+      <a class="print-only" href="https://kyna007.github.io/portfolio/"><span class="ic"><svg width="16" height="16"><use href="#i-ext"/></svg></span>kyna007.github.io/portfolio</a>
     </div>
     <div class="ct totop">
       <a href="#home"><span class="ic"><svg width="16" height="16" style="transform:rotate(-90deg)"><use href="#i-arrow"/></svg></span>맨 위로</a>
